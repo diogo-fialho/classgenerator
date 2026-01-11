@@ -5,7 +5,7 @@
 - [Commands](#commands) - Commands that can be used with .exe file
 
 ## Download exe
-You can download exe from [here](https://github.com/diogo-fialho/classgenerator/releases/tag/v0.0.1)
+You can download exe from [here](https://github.com/diogo-fialho/classgenerator/releases)
 
 ## Template properties
 These are properties that can be used together with templates when generating a new class, you can find examples in [examples](examples)
