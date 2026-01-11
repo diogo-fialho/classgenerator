@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35825.156 d17.13
+VisualStudioVersion = 17.13.35825.156
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classgenerator", "Classgenerator\Classgenerator.csproj", "{28DD6182-6F18-41EA-80A7-F70D1ED39BFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassGeneratorTest", "ClassGeneratorTest\ClassGeneratorTest.csproj", "{8B69AD90-464C-4ECA-958A-EE134456035D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{28DD6182-6F18-41EA-80A7-F70D1ED39BFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{28DD6182-6F18-41EA-80A7-F70D1ED39BFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{28DD6182-6F18-41EA-80A7-F70D1ED39BFC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B69AD90-464C-4ECA-958A-EE134456035D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B69AD90-464C-4ECA-958A-EE134456035D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B69AD90-464C-4ECA-958A-EE134456035D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B69AD90-464C-4ECA-958A-EE134456035D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
