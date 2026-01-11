@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace {@Namespace}
+{
+    public class {@ClassName}
+    {
+        {@PROPS}
+
+        public {@ClassName}()
+        {
+
+        }
+
+        public {@ClassName} MapFromData({@OriginalClass} data)
+        {
+            if (data == null) return null;
+
+            {@MAPPINGFROM}
+
+            return this;
+        }
+
+        public {@OriginalClass} MapToData()
+        {
+            return new {@OriginalClass}
+            {
+                {@MAPPINGTO}
+            };
+        }
+    }
+}

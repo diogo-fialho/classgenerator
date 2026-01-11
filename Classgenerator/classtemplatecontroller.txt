@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace {@Namespace}
+{
+    [ApiController]
+    public class {@ClassName}Controller
+    {
+        public ILogger<{@ClassName}Controller> logger;
+        public I{@ClassName}Service service;
+
+        public {@ClassName}Controller(ILogger<{@ClassName}Controller> logger, I{@ClassName}Service service)
+        {
+            this.logger = this.logger;
+            this.service = this.service;
+        }
+    }
+}
