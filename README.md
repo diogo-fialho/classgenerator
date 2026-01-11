@@ -1,8 +1,11 @@
 ## Contents
 
-- [Template properties](#template-properties): List of properties that can be used with templates
-- [Commands](#commands): Commands that can be used with .exe file
+- [Download] - Exe download location;
+- [Template properties](#template-properties) - List of properties that can be used with templates
+- [Commands](#commands) - Commands that can be used with .exe file
 
+## Download exe
+You can download exe from [here](https://github.com/diogo-fialho/classgenerator/releases/tag/v0.0.1)
 
 ## Template properties
 These are properties that can be used together with templates when generating a new class, you can find examples in [examples](examples)
@@ -24,7 +27,7 @@ Contains list of commands that can be used with `.exe`, here is an example:
 ```
 
 #### Table
-| Command | Description | Template property | Default value |
+| Command | Description | Template property | Default value (*) |
 |---|---|---|---|
 | file | source file, should include extension | OriginalClass (does not include the .cs) | TestClass.cs |
 | template | source of template file | - | classtemplate.txt |
@@ -32,3 +35,5 @@ Contains list of commands that can be used with `.exe`, here is an example:
 | namespace | namespace used in new file | Namespace | BL.DTO |
 | out | output folder | - | where .exe is |
 | filename | new file name | - | ClassName.cs |
+
+*-Most of the default values like templatename is expected to be in same folder as exe
