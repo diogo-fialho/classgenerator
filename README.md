@@ -33,7 +33,6 @@ Contains list of commands that can be used with `.exe`, here is an example:
 | template | source of template file | - | classtemplate.txt |
 | class | new class name | ClassName | OriginalClass.cs |
 | namespace | namespace used in new file | Namespace | BL.DTO |
-| out | output folder | - | where .exe is |
-| filename | new file name | - | ClassName.cs |
+| out | output filename | - | where .exe is with ClassName.cs |
 
 *-Most of the default values like templatename is expected to be in same folder as exe

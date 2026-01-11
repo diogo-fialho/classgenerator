@@ -1,4 +1,4 @@
-﻿using Microsoft.CodeAnalysis.CSharp;
+using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Extensions.Configuration;
 
@@ -38,14 +38,14 @@ var toprops = properties
 
 string classname = config["class"] ?? "New" + classes.First().Identifier.Text;
 string namespacedesc = config["namespace"] ?? "BL.DTO";
-template = template.Replace("{@Namespace}", namespacedesc);
-template = template.Replace("{@ClassName}", classname);
-template = template.Replace("{@OriginalClass}", classes.First().Identifier.Text);
-template = template.Replace("{@PROPS}", string.Join("\n", props));
-template = template.Replace("{@MAPPINGFROM}", string.Join("\n", fromprops));
-template = template.Replace("{@MAPPINGTO}", string.Join("\n", toprops));
+template = template
+    .Replace("{@Namespace}", namespacedesc)
+    .Replace("{@ClassName}", classname)
+    .Replace("{@OriginalClass}", classes.First().Identifier.Text)
+    .Replace("{@PROPS}", string.Join("\n", props))
+    .Replace("{@MAPPINGFROM}", string.Join("\n", fromprops))
+    .Replace("{@MAPPINGTO}", string.Join("\n", toprops));
 
-string output = config["out"] ?? "";
-string filename = (config["filename"] ?? $"{classname}") + ".cs";
-string fulloutput = $"{Path.Combine(output, filename)}";
-File.WriteAllText(fulloutput, template + "\n");
+string output = config["out"] ?? ($"{classname}" + ".cs");
+var fileInfo = new FileInfo(output);
+File.WriteAllText(fileInfo.FullName, template + "\n");
