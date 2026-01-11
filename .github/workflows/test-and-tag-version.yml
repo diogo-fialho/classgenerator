@@ -1,5 +1,6 @@
-# from chatgpt
-name: Auto Version Tag
+# test workflow equal to dotnet.yml workflow
+# versioning workflow from chatgpt
+name: Test + Auto Version Tag
 
 permissions:
   contents: write
@@ -14,7 +15,24 @@ on:
       - main
 
 jobs:
+  test: 
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+
   tag:
+    needs: test
     if: |
       github.event_name == 'push' ||
       (github.event_name == 'pull_request' && github.event.pull_request.merged == true)
