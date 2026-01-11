@@ -1,6 +1,6 @@
 ## Contents
 
-- [Download] - Exe download location;
+- [Download](#download-exe) - Exe download location;
 - [Template properties](#template-properties) - List of properties that can be used with templates
 - [Commands](#commands) - Commands that can be used with .exe file
 
